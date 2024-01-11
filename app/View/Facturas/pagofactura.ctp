@@ -16,7 +16,7 @@ echo ($this->Html->script('facturas/tiposPago.js'));
             <div class="dv_tip_val_pago form-group form-inline col-md-12">
                 <div class="col-md-6">
                     <label>Tipo</label>
-                    <?php echo $this->Form->input('tipopago', array('label' => '','tupe' => 'select', 'options' => $listTipPag, 'class' => 'form-control method_fact'));?>                    
+                    <?php echo $this->Form->input('tipopago', array('label' => '','tupe' => 'select', 'options' => $listTipPag, 'class' => 'form-control method_fact', 'style' => 'max-width:20vw !important'));?>                    
                 </div>
                 <div class="col-md-6">
                     <label>Valor</label>
