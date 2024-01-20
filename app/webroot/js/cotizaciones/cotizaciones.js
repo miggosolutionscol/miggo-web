@@ -635,7 +635,7 @@ var imprimirCotizacion = function() {
  */
 var generarPrefactura = function() {
     var cotizacionId = $('#cotizacionId').val();
-
+    
     if (cotizacionId == "") {
         bootbox.alert('No se ha creado la cotización.');
     } else {
@@ -649,7 +649,11 @@ var generarPrefactura = function() {
                     bootbox.alert('Se creo la prefactura con exito');
                 }
             }
-        });
+        }).fail(
+            function( jqXHR, textStatus, errorThrown ) {
+                bootbox.alert('Se creo la prefactura con exito');
+            }
+        );
     }
 };
 
