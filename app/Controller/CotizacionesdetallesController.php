@@ -193,7 +193,7 @@ class CotizacionesdetallesController extends AppController {
             $prefacturaId= "";
 
 
-        for ($i = 1; $i < $array_num; ++$i){
+        for ($i = 0; $i < $array_num; ++$i){
             
             
             if($estadoPrefactura==false){
