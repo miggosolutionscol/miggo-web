@@ -263,9 +263,7 @@ function aplicarReteica(){
     if(value == ""){
         bootbox.alert("Debe seleccionar al menos una opción de Reteica.");
     }else{
-        console.log(value);
         var prcImp = parseFloat((parseFloat(value)/100) + 1).toFixed(4);
-        console.log(prcImp);
         val_reteica = prcImp;
         var ttalAntesImp = obtenerTtalAntesImpuestos();
         var rteIcaSttal = parseFloat(parseFloat(ttalAntesImp * prcImp) - parseFloat(ttalAntesImp)).toFixed(0);

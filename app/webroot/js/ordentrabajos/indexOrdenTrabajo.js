@@ -4,7 +4,6 @@
  * @returns {undefined}
  */
 function seleccionarVehiculo(data){
-    console.log(data); 
     $('#datosVehiculo').html("");
     $('#datosVehiculo').hide();
     $('#vehiculo_id').val(data.id);        

@@ -37,9 +37,6 @@ var guardarevento = function() {
             type: "POST",
             success: function(data) {
                 var resp = JSON.parse(data);
-
-
-                console.log(resp);
                 if(resp.resp){
                     bootbox.alert('El evento ha sido registrado exitosamente.', function(){
                         location.reload();

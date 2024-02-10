@@ -187,7 +187,7 @@ const calcularDevolucion = function(){
  }
 
  const mostrarCamposDevoluciones = function(tipoPago){
-    if (tipoPago.first().find('option:selected').text()!="EFECTIVO" && tipoPago.val()!=0 ) {
+    if (tipoPago.first().find('option:selected').text().includes("EFECTIVO") && tipoPago.val()!=0 ) {
         tipoPago.parents('.dv_tip_val_pago').first().find('.divValueClientPaid').hide()
         tipoPago.parents('.dv_tip_val_pago').first().find('.divDevolution').hide();
     }else{

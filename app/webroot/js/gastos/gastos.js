@@ -25,7 +25,6 @@ function validarEstadoCuenta() {
 var obtenerCuentasDestino = function() {
     var cuentaOrigenId = $('#GastoCuentaId').val();
     var empresa_id = $('#GastoEmpresaId').val();
-    console.log(empresa_id);
     if (cuentaOrigenId != "") {
         $.ajax({
             url: $('#url-proyecto').val() + 'cuentas/ajaxobtenercuentadestino',
