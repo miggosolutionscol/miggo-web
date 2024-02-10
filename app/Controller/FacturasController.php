@@ -542,7 +542,7 @@ class FacturasController extends AppController
             $this->FacturasNotafactura->guardarNotaFactura($facturaId, $datFact['notafactura'], $datFact['vendedor']);
         }
 
-        /*Se obtiene la Bodega del usuario*/
+        /*Se obtiene el depósito del usuario*/
         $arrDptos = $this->DepositosUsuario->obtenerDepositosUsuario($datFact['usuario']);
         $arrDatDpto = $this->Deposito->obtenerInfoDepositoPorId($arrDptos['0']['DepositosUsuario']['deposito_id']);
 

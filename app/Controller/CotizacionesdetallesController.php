@@ -174,7 +174,7 @@ class CotizacionesdetallesController extends AppController {
      
         echo json_encode(array('resp' => $arrCotDet));             
     }        
-
+    
     public function ajaxObtenerDetallesCotizacionPrefactura(){
         $this->loadModel('Cotizacionesdetalle');
         $this->loadModel('Prefactura');

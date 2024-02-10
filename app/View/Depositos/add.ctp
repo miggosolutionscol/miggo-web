@@ -4,14 +4,14 @@
 <div class="container-fluid">
 <?php echo $this->Form->create('Deposito', array('type' => 'post', 'class' => 'form-inline')); ?>
 	<fieldset>
-		<legend><h2><b><?php echo __('Agregar Bodegas'); ?></b></h2></legend>
+		<legend><h2><b><?php echo __('Agregar Depósito'); ?></b></h2></legend>
                 <?php echo $this->Form->input('menuvert', array('type' => 'hidden', 'value' => '15', 'id' => 'menuvert')) ?>
                 <?php echo $this->Form->input('empresa_id', array('type' => 'hidden', 'value' => $empresaId)); ?>
 
                 <div class="row">
                     <div class="form-group">
                         <label for="DepositoDescripcion">Nombre</label>
-                        <?php echo $this->Form->input('descripcion', array('label' => '', 'class' => 'form-control', 'placeholder' => 'Nombre de la Bodegas')); ?>
+                        <?php echo $this->Form->input('descripcion', array('label' => '', 'class' => 'form-control', 'placeholder' => 'Nombre del Depósito')); ?>
                     </div>
                 </div><br>
 
@@ -32,14 +32,14 @@
                 <div class="row">
                     <div class="form-group">
                         <label for="DepositoTelefono">Teléfono</label>
-                        <?php echo $this->Form->input('telefono', array('label' => '', 'class' => 'form-control', 'placeholder' => 'Teléfono de la Bodegas')); ?>
+                        <?php echo $this->Form->input('telefono', array('label' => '', 'class' => 'form-control', 'placeholder' => 'Teléfono del Depósito')); ?>
                     </div>
                 </div><br>
 
                 <div class="row">
                     <div class="form-group">
                         <label for="DepositoDireccion">Dirección</label>
-                        <?php echo $this->Form->input('direccion', array('label' => '', 'class' => 'form-control', 'placeholder' => 'Dirección de la Bodegas')); ?>
+                        <?php echo $this->Form->input('direccion', array('label' => '', 'class' => 'form-control', 'placeholder' => 'Dirección del Depósito')); ?>
                     </div>
                 </div><br>
 
@@ -66,7 +66,7 @@
 
                 <div class="row">
                     <div class="form-group">
-                        <label for="DepositoTipodepositoId">Tipo Bodegas</label>
+                        <label for="DepositoTipodepositoId">Tipo Depósito</label>
                         <?php echo $this->Form->input('tipodeposito_id', array('label' => '', 'class' => 'form-control')); ?>
                     </div>
                 </div><br>
@@ -95,7 +95,7 @@
                 <div class="row">
                     <div class="form-group">
                         <label for="DepositoPrefijo">Prefijo</label>
-                        <?php echo $this->Form->input('prefijo', array('label' => '', 'class' => 'form-control', 'placeholder' => 'Prefijo de la Bodegas')); ?>
+                        <?php echo $this->Form->input('prefijo', array('label' => '', 'class' => 'form-control', 'placeholder' => 'Prefijo del Depósito')); ?>
                     </div>
                 </div><br>
 
@@ -116,7 +116,7 @@
                 <div class="row">
                     <div class="form-group">
                         <label for="DepositoNota">Nota</label>
-                        <?php echo $this->Form->input('nota', array('label' => '', 'class' => 'form-control', 'placeholder' => 'Agregar nota para la Bodegas')); ?>
+                        <?php echo $this->Form->input('nota', array('label' => '', 'class' => 'form-control', 'placeholder' => 'Agregar nota para el depósito')); ?>
                     </div>
                 </div>
 	</fieldset><br><br>
