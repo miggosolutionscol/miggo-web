@@ -56,7 +56,7 @@
                     </div>
                     
                     <div class="form-group form-inline"> 
-                        <label>Bodega</label>
+                        <label>Depósito</label>
                         <div class="input-group">
                             <?php 
                                 echo $this->Form->input("deposito_id",
