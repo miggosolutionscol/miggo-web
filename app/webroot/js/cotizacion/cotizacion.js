@@ -175,6 +175,7 @@ function validarDatosFactura(cantidadventa,precioventa){
 
 
 function eliminarProductoPrefactura(dato){
+    console.log("elimino"+dato);
         $.ajax({
             url: $('#url-proyecto').val() + 'prefacturasdetalles/delete',
             data: {detalleId: dato.id},
